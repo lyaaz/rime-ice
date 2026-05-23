@@ -1,0 +1,24 @@
+
+patch:
+  translator/always_show_comments: false
+  translator/spelling_hints: 0
+  translator/comment_format: []
+  translator/preedit_format: []
+  # translator/enable_correction: true
+  # switches/@0/reset: 2
+  cn_en/enable_sentence: true
+
+# __patch:
+# # Rx: iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_flypy {
+#   - patch/+:
+#       grammar:
+#         language: wanxiang-lts-zh-hans
+#         collocation_max_length: 6
+#         collocation_min_length: 3
+#         collocation_penalty: -14
+#         non_collocation_penalty: -6
+#         weak_collocation_penalty: -100
+#         rear_penalty: -20
+#       translator/contextual_suggestions: false
+#       translator/max_homophones: 8
+# # }

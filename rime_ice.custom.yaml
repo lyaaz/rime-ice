@@ -1,0 +1,4 @@
+patch:
+  translator/always_show_comments: false
+  translator/spelling_hints: 0
+  translator/comment_format: []
