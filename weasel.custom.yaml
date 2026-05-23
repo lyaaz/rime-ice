@@ -1,0 +1,80 @@
+
+patch:
+  show_notifications_time: 300              # 通知显示的时间，单位 ms
+  global_ascii: true                        # 切换为 ascii 模式时，是否影响所有窗口：true；false
+
+  app_options:
+    # firefox.exe:
+    #   inline_preedit: true   # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
+    # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写
+    #   ascii_mode: true     # 英文模式
+    # conhost.exe:
+    #   ascii_mode: true
+    # WindowsTerminal.exe:
+    #   ascii_mode: true
+    # wt.exe:
+    #   ascii_mode: true
+    # pwsh.exe:
+    #   ascii_mode: true
+    # powershell.exe:
+    #   ascii_mode: true 
+    # cursor.exe:
+    #   ascii_mode: true
+    # vscode.exe:
+    #   ascii_mode: true
+    # idea.exe:
+    #   ascii_mode: true
+    # idea64.exe:
+    #   ascii_mode: true
+    # powertoys.powerlauncher.exe:
+    #   ascii_mode: true
+    # mintty.exe:
+    #   ascii_mode: true
+    # nvim-qt.exe:
+    #   ascii_mode: true
+    #   vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
+  # [End of <app_options>]
+# weasel.custom.yaml
+  style/+:
+    # style/inline_preedit: false
+    label_format: "%s"
+    inline_preedit: true
+    font_point: 11
+    label_font_point: 11
+    comment_font_point: 11
+    horizontal: true
+    color_scheme: win11light
+    color_scheme_dark: win11dark
+    layout:
+      min_width: 10
+      margin_x: 16
+      margin_y: 8
+      border: 0
+      candidate_spacing: 20
+      hilite_spacing: 6
+      hilite_padding: 4
+      hilite_padding_x: 8
+      corner_radius: 8
+      round_corner: 4
+      shadow_radius: 8
+  preset_color_schemes/+:
+    win11light:
+      name: " Win11浅色 / Win11light"
+      text_color: 0x191919
+      label_color: 0x191919
+      hilited_label_color: 0x191919
+      back_color: 0xf9f9f9
+      border_color: 0x009e5a00
+      hilited_mark_color: 0xc06700
+      hilited_candidate_back_color: 0xf0f0f0
+      shadow_color: 0x20000000
+    win11dark:
+      name: "Win11暗色 / Win11Dark"
+      text_color: 0xf9f9f9
+      label_color: 0xf9f9f9
+      back_color: 0x2C2C2C
+      hilited_label_color: 0xf9f9f9
+      border_color: 0x002C2C2C
+      hilited_mark_color: 0xFFC24C
+      hilited_candidate_back_color: 0x383838
+      shadow_color: 0x20000000
